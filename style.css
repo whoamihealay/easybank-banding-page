@@ -140,7 +140,7 @@ button {
 }
 
 .container {
-  padding-inline: 1em;
+  padding-inline: 3em;
   margin-inline: auto;
   max-width: 80rem;
 }
@@ -232,9 +232,11 @@ button {
   z-index: 1000;
   display: flex;
   margin-inline: 1.5rem;
-  padding: 1rem 0;
+  max-width: 80rem;
+  padding: 1rem 1rem;
   justify-content: space-between;
   align-items: center;
+  margin: auto;
 }
 
 .hamburger {
@@ -275,13 +277,16 @@ button {
   margin-bottom: 3rem;
 }
 
-.phones {
-  background-image: url("./images/bg-intro-mobile.svg");
-  background-position: center;
-  object-fit: cover;
-  height: 20.5rem;
-  width: 100%;
-  object-position: bottom;
+@media screen and (max-width: 375px) {
+  .phones {
+    background-image: url("./images/bg-intro-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    height: 20.5rem;
+    width: 100%;
+    object-position: bottom;
+  }
 }
 
 .h1-main {
@@ -401,4 +406,41 @@ footer {
 .re-nav li:hover {
   color: var(--clr-lime-green);
   cursor: pointer;
+}
+
+@media screen and (min-width: 376px) {
+  .nav {
+    position: relative;
+    padding: 1rem 5rem;
+    z-index: 1000;
+  }
+
+  .section-1 {
+    align-content: center;
+  }
+
+  .header-content {
+    position: relative;
+    max-width: 30rem;
+    text-align: left;
+    margin: 0;
+  }
+
+  .bg-phones {
+    position: relative;
+  }
+
+  .bg {
+    position: absolute;
+    object-fit: cover;
+    right: -10rem;
+    top: -10rem;
+  }
+
+  .phones {
+    position: absolute;
+    background-position: left;
+    right: -5rem;
+    max-width: 40rem;
+  }
 }
