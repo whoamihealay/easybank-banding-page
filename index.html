@@ -23,6 +23,7 @@
     />
   </head>
   <body>
+    <!-- Header Start -->
     <header
       class="
         flex
@@ -39,6 +40,7 @@
       "
     >
       <img src="/images/logo.svg" alt="logo" class="fill-dark-blue" />
+      <!-- Nav Start -->
       <nav class="sm:h-16">
         <ul
           id="dropdown"
@@ -90,10 +92,16 @@
               hover:border-b-4 hover:border-lime-green hover:border-solid
             "
           >
-            <a href="#">Careers</a>
+            <a
+              href="https://linkedin.com/in/andrewsouthern01"
+              target="_blank"
+              rel="noreferrer"
+              >Careers</a
+            >
           </li>
         </ul>
       </nav>
+      <!-- Nav End -->
       <button
         class="
           mobile:hidden
@@ -120,7 +128,9 @@
         />
       </button>
     </header>
+    <!-- Header End -->
     <main class="mx-auto">
+      <!-- Hook Section Start -->
       <section
         class="
           pb-8
@@ -184,6 +194,7 @@
           class="absolute bottom-0 left-0 right-0 h-28 bg-very-light-gray -z-10"
         ></div>
       </section>
+      <!-- Hook section End / About Section start -->
       <section
         id="about"
         class="
@@ -252,6 +263,7 @@
           </div>
         </div>
       </section>
+      <!-- About Section End / Blog section start -->
       <section
         id="blog"
         class="px-4 mx-auto max-w-7xl py-12 bg-very-light-gray/50"
@@ -277,7 +289,9 @@
             <div class="px-6 py-4">
               <p class="text-xs text-grayish-blue">By Claire Robinson</p>
               <h3 class="text-dark-blue py-2">
-                Receive money in any currency with no fees
+                <a href="#" class="hover:text-lime-green"
+                  >Receive money in any currency with no fees</a
+                >
               </h3>
               <p class="text-sm text-grayish-blue">
                 The world is getting smaller and we're becoming more mobile. So
@@ -294,7 +308,9 @@
             <div class="px-6 py-4">
               <p class="text-xs text-grayish-blue">By Wilson Hutton</p>
               <h3 class="text-dark-blue py-2">
-                Treat yourself without worrying about money
+                <a href="#" class="hover:text-lime-green"
+                  >Treat yourself without worrying about money</a
+                >
               </h3>
               <p class="text-sm text-grayish-blue">
                 Our simple budgeting feature allows you to separate out your
@@ -311,7 +327,9 @@
             <div class="px-6 py-4">
               <p class="text-xs text-grayish-blue">By Wilson Hutton</p>
               <h3 class="text-dark-blue py-2">
-                Take your Easybank card wherever you go
+                <a href="#" class="hover:text-lime-green"
+                  >Take your Easybank card wherever you go</a
+                >
               </h3>
               <p class="text-sm text-grayish-blue">
                 We want you to enjoy your travels. This is why we don't charge
@@ -328,7 +346,9 @@
             <div class="px-6 py-4">
               <p class="text-xs text-grayish-blue">By Claire Robinson</p>
               <h3 class="text-dark-blue py-2">
-                Our invite-only Beta accounts are now live!
+                <a href="#" class="hover:text-lime-green"
+                  >Our invite-only Beta accounts are now live!</a
+                >
               </h3>
               <p class="text-sm text-grayish-blue">
                 After a lot of hard work by the whole team, we're excited to
@@ -339,6 +359,7 @@
           </article>
         </div>
       </section>
+      <!-- Blog section End -->
     </main>
     <footer
       class="
@@ -349,34 +370,36 @@
         bg-dark-blue
       "
     >
+      <!-- Main Footer Start -->
       <div class="md:flex md:gap-32 md:items-center max-w-7xl md:mx-auto">
         <div class="md:flex md:flex-col md:justify-between">
           <img src="/images/logo-dark.svg" alt="Logo" class="mx-auto py-4" />
           <div class="flex gap-4 justify-center py-4">
             <img
+              id="icon"
               src="/images/icon-facebook.svg"
               alt="icon-facebook"
-              class="h-6 w-6"
+              class="h-6 w-6 cursor-pointer"
             />
             <img
               src="/images/icon-youtube.svg"
               alt="icon-youtube"
-              class="h-6 w-6"
+              class="h-6 w-6 cursor-pointer"
             />
             <img
               src="/images/icon-twitter.svg"
               alt="icon-twitter"
-              class="h-6 w-6"
+              class="h-6 w-6 cursor-pointer"
             />
             <img
               src="/images/icon-pinterest.svg"
               alt="icon-pinterest"
-              class="h-6 w-6"
+              class="h-6 w-6 cursor-pointer"
             />
             <img
               src="/images/icon-instagram.svg"
               alt="icon-instagram"
-              class="h-6 w-6"
+              class="h-6 w-6 cursor-pointer"
             />
           </div>
         </div>
@@ -387,14 +410,22 @@
             md:grid md:grid-cols-2 md:text-left md:gap-x-32
           "
         >
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Support</a></li>
-          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#about" class="hover:text-lime-green">About Us</a></li>
+          <li><a href="#" class="hover:text-lime-green">Contact</a></li>
+          <li><a href="#blog" class="hover:text-lime-green">Blog</a></li>
+          <li>
+            <a
+              href="https://linkedin.com/in/andrewsouthern01"
+              target="_blank"
+              rel="noreferrer"
+              class="hover:text-lime-green"
+              >Careers</a
+            >
+          </li>
+          <li><a href="#" class="hover:text-lime-green">Support</a></li>
+          <li><a href="#" class="hover:text-lime-green">Privacy Policy</a></li>
         </ul>
-        <div class="md:flex md:flex-col md:ml-auto">
+        <div class="md:flex md:flex-col md:items-end md:ml-auto">
           <button
             class="
               text-white
@@ -417,6 +448,7 @@
           </p>
         </div>
       </div>
+      <!-- Main Footer End / Acknoledgement start -->
       <div class="text-xs text-center">
         Challenge by
         <a
@@ -434,7 +466,9 @@
           >Andrew</a
         >.
       </div>
+      <!-- Acknoledgement end -->
     </footer>
+    <!-- Script -->
     <script src="index.js"></script>
   </body>
 </html>

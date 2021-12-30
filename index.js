@@ -10,3 +10,11 @@
 //     document.getElementById("drop-btn").src = "/images/icon-hamburger.svg";
 //   }
 // }
+
+document
+  .getElementsById(icon)
+  .contentDocument()
+  .getElementById("iconSVG")
+  .setAttribute("fill", "#FFF");
+
+console.log(document.getElementsById(icon));

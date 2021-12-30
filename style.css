@@ -622,6 +622,10 @@ body {
   transform: var(--tw-transform);
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .flex-row-reverse {
   flex-direction: row-reverse;
 }
@@ -858,6 +862,11 @@ body {
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
+.text-lime-green {
+  --tw-text-opacity: 1;
+  color: hsl(136 65% 51% / var(--tw-text-opacity));
+}
+
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -907,8 +916,28 @@ body {
   border-color: hsl(136 65% 51% / var(--tw-border-opacity));
 }
 
+.hover\:bg-lime-green:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(136 65% 51% / var(--tw-bg-opacity));
+}
+
+.hover\:fill-lime-green:hover {
+  fill: hsl(136, 65%, 51%);
+}
+
+.hover\:text-lime-green:hover {
+  --tw-text-opacity: 1;
+  color: hsl(136 65% 51% / var(--tw-text-opacity));
+}
+
 .hover\:opacity-70:hover {
   opacity: 0.7;
+}
+
+.hover\:after\:bg-lime-green:hover::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: hsl(136 65% 51% / var(--tw-bg-opacity));
 }
 
 .focus\:border-b-4:focus {
@@ -1029,6 +1058,14 @@ body {
 
   .md\:flex-col {
     flex-direction: column;
+  }
+
+  .md\:items-start {
+    align-items: flex-start;
+  }
+
+  .md\:items-end {
+    align-items: flex-end;
   }
 
   .md\:items-center {
