@@ -710,7 +710,7 @@ body {
 }
 
 .bg-mobile {
-  background-image: url('/images/bg-intro-mobile.svg');
+  background-image: url('./images/bg-intro-mobile.svg');
 }
 
 .from-lime-green {
@@ -1120,7 +1120,7 @@ body {
   }
 
   .md\:bg-desktop {
-    background-image: url('/images/bg-intro-desktop.svg');
+    background-image: url('./images/bg-intro-desktop.svg');
   }
 
   .md\:bg-left {
