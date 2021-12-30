@@ -38,8 +38,10 @@
 @tailwind utilities;
 
 @layer utilities {
-  .logo {
-    fill: white;
-    color: white;
+  .dropdown[data-visible="true"] {
+    @apply mobile:opacity-100;
+  }
+  .backdrop[data-visible="true"] {
+    @apply mobile:before:bg-gray-800/50 mobile:before:absolute mobile:before:inset-0 mobile:before:-bottom-[400%];
   }
 }

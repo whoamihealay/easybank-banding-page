@@ -1,20 +1,17 @@
-// let showDropdown = false;
+nav = document.getElementById("dropdown");
+backdrop = document.getElementById("body");
+button = document.getElementById("drop-btn");
 
-// function dropdown() {
-//   showDropdown = !showDropdown;
-//   if (showDropdown === true) {
-//     document.getElementById("dropdown").style.opacity = "1";
-//     document.getElementById("drop-btn").src = "/images/icon-close.svg";
-//   } else {
-//     document.getElementById("dropdown").style.opacity = "0";
-//     document.getElementById("drop-btn").src = "/images/icon-hamburger.svg";
-//   }
-// }
+function dropdown() {
+  const visibility = nav.getAttribute("data-visible");
 
-document
-  .getElementsById(icon)
-  .contentDocument()
-  .getElementById("iconSVG")
-  .setAttribute("fill", "#FFF");
-
-console.log(document.getElementsById(icon));
+  if (visibility === "false") {
+    nav.setAttribute("data-visible", "true");
+    backdrop.setAttribute("data-visible", "true");
+    button.src = "/images/icon-close.svg";
+  } else {
+    nav.setAttribute("data-visible", "false");
+    backdrop.setAttribute("data-visible", "false");
+    button.src = "/images/icon-hamburger.svg";
+  }
+}

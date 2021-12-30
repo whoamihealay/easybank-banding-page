@@ -22,7 +22,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body id="body" class="backdrop" data-visible="false">
     <!-- Header Start -->
     <header
       class="
@@ -41,23 +41,46 @@
     >
       <img src="/images/logo.svg" alt="logo" class="fill-dark-blue" />
       <!-- Nav Start -->
-      <nav class="sm:h-16">
+      <nav
+        class="
+          sm:h-16
+          dropdown
+          mobile:absolute
+          mobile:opacity-0
+          mobile:left-0
+          mobile:right-0
+          mobile:w-11/12
+          mobile:mx-auto
+          mobile:top-24
+          mobile:h-60
+          mobile:bg-white
+        "
+        id="dropdown"
+        data-visible="false"
+      >
         <ul
-          id="dropdown"
           class="
-            mobile:hidden
-            sm:flex sm:gap-4 sm:items-center
+            flex
+            gap-4
+            sm:items-center
             text-grayish-blue
             md:gap-8
             xl:gap-24
             sm:h-full
+            mobile:flex-col
+            mobile:items-center
+            mobile:justify-center
+            mobile:p-4
+            mobile:text-dark-blue
+            mobile:text-lg
           "
         >
           <li
             class="
               sm:py-4
-              hover:border-b-4 hover:border-lime-green hover:border-solid
-              focus:border-b-4 focus:border-lime-green focus:border-solid
+              border-b-4
+              hover:border-lime-green
+              border-solid border-transparent
             "
           >
             <a class="" href="#">Home</a>
@@ -65,7 +88,9 @@
           <li
             class="
               sm:py-4
-              hover:border-b-4 hover:border-lime-green hover:border-solid
+              border-b-4
+              hover:border-lime-green
+              border-solid border-transparent
             "
           >
             <a href="#about">About</a>
@@ -73,7 +98,9 @@
           <li
             class="
               sm:py-4
-              hover:border-b-4 hover:border-lime-green hover:border-solid
+              border-b-4
+              hover:border-lime-green
+              border-solid border-transparent
             "
           >
             <a href="#">Contact</a>
@@ -81,7 +108,9 @@
           <li
             class="
               sm:py-4
-              hover:border-b-4 hover:border-lime-green hover:border-solid
+              border-b-4
+              hover:border-lime-green
+              border-solid border-transparent
             "
           >
             <a href="#blog">Blog</a>
@@ -89,7 +118,9 @@
           <li
             class="
               sm:py-4
-              hover:border-b-4 hover:border-lime-green hover:border-solid
+              border-b-4
+              hover:border-lime-green
+              border-solid border-transparent
             "
           >
             <a
@@ -119,12 +150,11 @@
       >
         Request Invite
       </button>
-      <button class="sm:hidden" onclick="dropdown()">
+      <button class="sm:hidden z-50" onclick="dropdown()">
         <img
           id="drop-btn"
           src="/images/icon-hamburger.svg"
           alt="hamburger-open/close"
-          class=""
         />
       </button>
     </header>
