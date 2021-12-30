@@ -36,3 +36,10 @@
 }
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .logo {
+    fill: white;
+    color: white;
+  }
+}
