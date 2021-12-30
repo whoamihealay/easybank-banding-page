@@ -147,9 +147,9 @@ module.exports = {
       "gradient-to-l": "linear-gradient(to left, var(--tw-gradient-stops))",
       "gradient-to-tl":
         "linear-gradient(to top left, var(--tw-gradient-stops))",
-      mobile: "url('/images/bg-intro-mobile.svg')",
-      desktop: "url('/images/bg-intro-desktop.svg')",
-      logo: "url('/images/logo.svg')",
+      mobile: "url('./images/bg-intro-mobile.svg')",
+      desktop: "url('./images/bg-intro-desktop.svg')",
+      logo: "url('./images/logo.svg')",
     },
     backgroundOpacity: ({ theme }) => theme("opacity"),
     backgroundPosition: {
